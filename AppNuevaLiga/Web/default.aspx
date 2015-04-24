@@ -14,6 +14,7 @@
 
             if ((Aliens = true)) {
 
+
                 
                 document.getElementById("Alien").style.visibility = "visible";
                 document.getElementById("Super").style.visibility = "hidden";
