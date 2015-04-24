@@ -24,27 +24,36 @@ namespace AppNuevaLiga.Web
                 Caracterizacion a = new Debilidades(TextBox1.Text);
                 CaracterizacionRepositories Debilidades = new CaracterizacionRepositories();
                 Debilidades.AgregarDebilidades(a);
+                Label6.Text = a.ToString();
             }
             if (Habilidad.Checked == true) {
                 Caracterizacion a = new Habilidades(TextBox1.Text);
                 CaracterizacionRepositories Habilidades = new CaracterizacionRepositories();
                 Habilidades.AgregarHabilidades(a);
+                Label6.Text = a.ToString();
             }
             if (Arma.Checked == true) {
                 Caracterizacion a = new Armas(TextBox1.Text);
                 CaracterizacionRepositories Debilidades = new CaracterizacionRepositories();
                 Debilidades.AgregarDebilidades(a);
+                Label6.Text = a.ToString();
             }
             if (Poder.Checked == true) {
                 Caracterizacion a = new Poderes(TextBox1.Text);
                 CaracterizacionRepositories poderes = new CaracterizacionRepositories();
                 poderes.AgregarPoderes(a);
+                Label6.Text = a.ToString();
             }
+
+           
+
         }
+
+
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Server.Transfer("Mostrar.aspx", true);
+            
         }
 
        

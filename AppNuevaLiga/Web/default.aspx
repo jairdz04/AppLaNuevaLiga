@@ -16,6 +16,8 @@
 
 
                 
+
+
                 document.getElementById("Alien").style.visibility = "visible";
                 document.getElementById("Super").style.visibility = "hidden";
                 document.getElementById("Artificial").style.visibility = "hidden";
@@ -88,20 +90,57 @@
         <br />
         
         <br />
-        <asp:DropDownList ID="Habilidades" runat="server" DataSourceID="ObjectDataSource1">
-        </asp:DropDownList>
-            <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="MostrarHabilidades" TypeName="AppNuevaLiga.Datos.CaracterizacionRepositories"></asp:ObjectDataSource>
-        <asp:DropDownList ID="Debilidades" runat="server" DataSourceID="ObjectDataSource2">
-        </asp:DropDownList>
-            <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="MostrarDebilidades" TypeName="AppNuevaLiga.Datos.CaracterizacionRepositories"></asp:ObjectDataSource>
-        <asp:DropDownList ID="poderes" runat="server" DataSourceID="ObjectDataSource3">
-        </asp:DropDownList>
-            <asp:ObjectDataSource ID="ObjectDataSource3" runat="server" SelectMethod="MostrarPoderes" TypeName="AppNuevaLiga.Datos.CaracterizacionRepositories"></asp:ObjectDataSource>
-        <asp:DropDownList ID="Armas" runat="server" DataSourceID="ObjectDataSource4">
-        </asp:DropDownList>
-            <asp:ObjectDataSource ID="ObjectDataSource4" runat="server" SelectMethod="MostrarArmas" TypeName="AppNuevaLiga.Datos.CaracterizacionRepositories"></asp:ObjectDataSource>
+            <asp:DropDownList ID="DropDownList2" runat="server" >
+                <asp:ListItem>---ninguna----</asp:ListItem>
+                <asp:ListItem>huir</asp:ListItem>
+                <asp:ListItem>pensar</asp:ListItem>
+                <asp:ListItem>intuir</asp:ListItem>
+                <asp:ListItem>mentir</asp:ListItem>
+                <asp:ListItem>disimular</asp:ListItem>
+                <asp:ListItem>correr</asp:ListItem>
+            </asp:DropDownList>
+            <asp:DropDownList ID="DropDownList3" runat="server">
+                <asp:ListItem>-----Ninguna-----</asp:ListItem>
+                <asp:ListItem>Criptonita</asp:ListItem>
+                <asp:ListItem>Mujeres</asp:ListItem>
+                <asp:ListItem>Atar manos</asp:ListItem>
+                <asp:ListItem>Sonido</asp:ListItem>
+                <asp:ListItem>Murcielagos</asp:ListItem>
+                <asp:ListItem>Arañas</asp:ListItem>
+                <asp:ListItem>Agua</asp:ListItem>
+                <asp:ListItem>Fuego</asp:ListItem>
+            </asp:DropDownList>
+            <asp:DropDownList ID="DropDownList4" runat="server">
+                <asp:ListItem>----ninguna----</asp:ListItem>
+                <asp:ListItem>Navaja</asp:ListItem>
+                <asp:ListItem>Revolver</asp:ListItem>
+                <asp:ListItem>Pistola</asp:ListItem>
+                <asp:ListItem>Ak-47</asp:ListItem>
+                <asp:ListItem>Changon</asp:ListItem>
+                <asp:ListItem>Escopeta</asp:ListItem>
+                <asp:ListItem>Rifle</asp:ListItem>
+                <asp:ListItem>Granada</asp:ListItem>
+                <asp:ListItem>Bomba</asp:ListItem>
+            </asp:DropDownList>
+            <asp:DropDownList ID="DropDownList5" runat="server">
+                <asp:ListItem>----Ninguna----</asp:ListItem>
+                <asp:ListItem>Volar</asp:ListItem>
+                <asp:ListItem>Invisibilidad</asp:ListItem>
+                <asp:ListItem>Rayos X</asp:ListItem>
+                <asp:ListItem>Super Velocidad</asp:ListItem>
+                <asp:ListItem>Super Fuerza</asp:ListItem>
+                <asp:ListItem>Indesctructible</asp:ListItem>
+                <asp:ListItem>Oraculo</asp:ListItem>
+                <asp:ListItem>Teletransportación</asp:ListItem>
+                <asp:ListItem>Kame Ha</asp:ListItem>
+                <asp:ListItem>Henkidama</asp:ListItem>
+            </asp:DropDownList>
+            <br />
+            <br />
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Confirmar " />
         <br />
         <br />
+            <asp:Label ID="Label6" runat="server"></asp:Label>
         <br />
         <br />
             

@@ -15,6 +15,12 @@ namespace AppNuevaLiga.Datos
         ArrayList Habilidades = new ArrayList();
         ArrayList Poderes = new ArrayList();
         ArrayList Armas = new ArrayList();
+        
+
+
+        
+
+
 
         public void AgregarPersonalidades(Caracterizacion c)
         {
@@ -51,6 +57,8 @@ namespace AppNuevaLiga.Datos
 
             return palabra;
         }
+
+        
         public string MostrarHabilidades()
         {
             string palabra = "";
