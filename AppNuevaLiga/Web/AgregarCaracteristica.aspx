@@ -37,9 +37,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button2" runat="server" Text="Agregar" OnClick="Button2_Click" />
     
-    
+  
     &nbsp;
-            <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Mostrar" />
+            
     
     
     </div>
